@@ -13,10 +13,12 @@
     "@vapi-ai/web": "^2.3.6",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "convex": "^1.24.8",
     "lucide-react": "^0.522.0",
     "next": "15.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "svix": "^1.67.0",
     "swr": "^2.2.0",
     "tailwind-merge": "^3.3.1"
   },
