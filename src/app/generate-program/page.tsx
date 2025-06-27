@@ -1,4 +1,5 @@
 "use client";
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { vapi } from "@/lib/vapi";
@@ -87,14 +88,28 @@ useEffect(() => {
       setIsSpeaking(false);
     };
 
-    const handleMessage = (message: any) => {
-      if (message.type === "transcript" && message.transcriptType === "final") {
-        const newMessage = { content: message.transcript, role: message.role };
-        setMessages((prev) => [...prev, newMessage]);
-      }
+   const handleMessage = (message: {
+  type: string;
+  transcript?: string;
+  transcriptType?: string;
+  role?: string;
+}) => {
+  if (
+    message.type === "transcript" &&
+    message.transcriptType === "final" &&
+    message.transcript &&
+    message.role
+  ) {
+    const newMessage = {
+      content: message.transcript,
+      role: message.role,
     };
+    setMessages((prev) => [...prev, newMessage]);
+  }
+};
 
-  const handleError = (error: any) => {
+
+  const handleError = (error: unknown) => {
   console.error("❌ Vapi Error:", error);
   if (error instanceof Error) {
     console.error("Message:", error.message);
