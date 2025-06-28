@@ -99,6 +99,7 @@ Plan is saved and user is redirected to their profile
 ---
 ### 🧑‍💻 Author
 Made with 💜 by @gourikasoni
+
 If you like this project, give it a ⭐ on GitHub!
 
 
