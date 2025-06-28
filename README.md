@@ -1,6 +1,9 @@
 # 🏋️‍♀️ Trainityy — Your AI Fitness & Diet Coach 💬🧠
 
 Trainityy is a full-stack AI fitness assistant that generates personalized workout and diet plans through an interactive voice-based interface.
+## 📸 Preview
+
+![App Preview](https://raw.githubusercontent.com/gourikasoni/trainityy/main/public/preview.png)
 
 
 
