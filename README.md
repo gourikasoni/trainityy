@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏋️‍♀️ Trainityy — Your AI Fitness & Diet Coach 💬🧠
 
-## Getting Started
+Trainityy is a full-stack AI fitness assistant that generates personalized workout and diet plans through an interactive voice-based interface.
 
-First, run the development server:
+
+
+---
+
+## 🌟 Features
+
+- 🎙️ Voice-based interaction using Vapi (GPT-4o + Deepgram)
+- 🧠 Smart AI coaching powered by Gemini AI
+- 🏋️ Tailored workout and diet plans
+- 🔐 Secure authentication via Clerk
+- 📦 Real-time data with Convex backend
+- 📄 Plan history saved to database
+- 👤 User profile with saved programs
+- ✨ Responsive, modern UI
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:** Next.js 15, React, TypeScript, TailwindCSS, Shadcn UI  
+**Backend:** Convex (database + functions)  
+**AI:** Vapi (Voice AI), Gemini (LLM)  
+**Auth:** Clerk  
+**Deployment:** Vercel  
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/gourikasoni/trainityy
+cd trainityy
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+```
+### 3. Set Up Environment Variables
+Create a .env.local file in the root directory and add the following:
+```bash
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+
+NEXT_PUBLIC_VAPI_WORKFLOW_ID=your_vapi_workflow_id
+
+CONVEX_DEPLOYMENT_NAME=your_convex_deployment_name
+
+```
+### 4. Start Dev Server
+In one terminal, run:
+
+
+```bash
+npx convex dev
+```
+In another terminal:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+---
+### 🧪 How It Works
+User signs in using Clerk
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Starts a voice-based conversation with the AI
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+AI gathers goals and preferences
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Personalized fitness + diet plans are generated
 
-## Learn More
+Plan is saved and user is redirected to their profile
+---
 
-To learn more about Next.js, take a look at the following resources:
+### 🧩 Future Plans
+📊 AI-based progress tracking and analysis
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📅 Weekly reminders and plan updates
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🔍 Advanced goal customization
 
-## Deploy on Vercel
+🧍‍♀️ Animated AI avatars
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📝 Admin dashboard with analytics
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🌐 Multi-language support
+
+🤝 Social/community plan sharing
+
+---
+### 🧑‍💻 Author
+Made with 💜 by @gourikasoni
+If you like this project, give it a ⭐ on GitHub!
+
+
