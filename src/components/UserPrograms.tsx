@@ -39,28 +39,33 @@ const UserPrograms = () => {
             </p>
 
             {/* STATS */}
-            <div className="flex items-center justify-center gap-16 mt-10 font-mono">
-              <div className="flex flex-col items-center">
-                <p className="text-3xl text-primary">500+</p>
-                <p className="text-sm text-muted-foreground uppercase tracking-wide mt-1">
-                  PROGRAMS
-                </p>
-              </div>
-              <div className="w-px h-12 bg-border"></div>
-              <div className="flex flex-col items-center">
-                <p className="text-3xl text-primary">3min</p>
-                <p className="text-sm text-muted-foreground uppercase tracking-wide mt-1">
-                  CREATION TIME
-                </p>
-              </div>
-              <div className="w-px h-12 bg-border"></div>
-              <div className="flex flex-col items-center">
-                <p className="text-3xl text-primary">100%</p>
-                <p className="text-sm text-muted-foreground uppercase tracking-wide mt-1">
-                  PERSONALIZED
-                </p>
-              </div>
-            </div>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-16 mt-10 font-mono text-center">
+  <div className="flex flex-col items-center">
+    <p className="text-2xl sm:text-3xl text-primary">500+</p>
+    <p className="text-xs sm:text-sm text-muted-foreground uppercase tracking-wide mt-1">
+      Programs
+    </p>
+  </div>
+
+  <div className="hidden sm:block w-px h-12 bg-border" />
+
+  <div className="flex flex-col items-center">
+    <p className="text-2xl sm:text-3xl text-primary">3min</p>
+    <p className="text-xs sm:text-sm text-muted-foreground uppercase tracking-wide mt-1">
+      Creation Time
+    </p>
+  </div>
+
+  <div className="hidden sm:block w-px h-12 bg-border" />
+
+  <div className="flex flex-col items-center">
+    <p className="text-2xl sm:text-3xl text-primary">100%</p>
+    <p className="text-xs sm:text-sm text-muted-foreground uppercase tracking-wide mt-1">
+      Personalized
+    </p>
+  </div>
+</div>
+
           </div>
         </div>
 
